@@ -11,9 +11,9 @@ if(props.age<12){
       <div>Name:{props.name}</div>
       <div>Age:{props.age}</div>
       <div>isOnline:{props.isOnline ?  (
-            <span style={{ color: 'green' }}>🟢 Online</span>
+            <span style={{ color: 'green' }}>Online</span>
           ) : (
-            <span style={{ color: 'red' }}>🔴 Offline</span>
+            <span style={{ color: 'red' }}>Offline</span>
           )}
         </div>
     </div>
