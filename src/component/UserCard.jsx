@@ -2,15 +2,21 @@ import React from 'react'
 
 const UserCard = (props) => {
 if(props.age<12){
-  return ( <p>access denied</p>)
+  return ( <div className="card"><p className="denied">access denied</p></div>)
  
 }
   return (
     <>
-    <div>Name:{props.name}</div>
-    <div>Age:{props.age}</div>
-
-    <div>isOnline:{props.isOnline ? "online" : "offline"}</div>
+    <div className="card">
+      <div>Name:{props.name}</div>
+      <div>Age:{props.age}</div>
+      <div>isOnline:{props.isOnline ?  (
+            <span style={{ color: 'green' }}>🟢 Online</span>
+          ) : (
+            <span style={{ color: 'red' }}>🔴 Offline</span>
+          )}
+        </div>
+    </div>
     </>
   )
 }

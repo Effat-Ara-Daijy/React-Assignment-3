@@ -1,1 +1,15 @@
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
 
+.denied {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
